@@ -260,3 +260,6 @@ section.tint{border-top:1px solid var(--line);border-bottom:1px solid var(--line
   width:92px;height:92px;border-radius:50%;object-fit:cover;
   border:3px solid rgba(255,255,255,.9);margin-bottom:18px;
 }
+
+.photo-figure{margin:0}
+.photo-figure .photo-caption{margin-top:10px}
