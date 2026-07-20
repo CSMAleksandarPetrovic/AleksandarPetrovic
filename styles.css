@@ -289,3 +289,8 @@ section.tint{border-top:1px solid var(--line);border-bottom:1px solid var(--line
 }
 /* retire old placements */
 .hero-avatar,.about-photo,.photo-col,.photo-figure,.photo-caption{display:none}
+
+
+/* hero portrait crop v3: 3:4 headshot, less torso */
+.hero-portrait{aspect-ratio:3/4;width:290px}
+@media(max-width:860px){.hero-portrait{width:190px}}
