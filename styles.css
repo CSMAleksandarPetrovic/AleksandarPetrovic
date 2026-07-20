@@ -274,3 +274,18 @@ section.tint{border-top:1px solid var(--line);border-bottom:1px solid var(--line
   border-radius:12px;
 }
 .photo-caption{max-width:320px}
+
+
+/* ================= hero portrait (v2) ================= */
+.hero-inner{grid-template-columns:1fr 300px;gap:48px;align-items:center}
+.hero-portrait{
+  width:300px;aspect-ratio:4/5;object-fit:cover;display:block;
+  border-radius:16px;border:1px solid var(--line);
+  box-shadow:0 14px 34px rgba(11,37,69,.16);
+}
+@media(max-width:860px){
+  .hero-inner{grid-template-columns:1fr;gap:26px}
+  .hero-portrait{width:200px;margin:0 auto;order:-1}
+}
+/* retire old placements */
+.hero-avatar,.about-photo,.photo-col,.photo-figure,.photo-caption{display:none}
