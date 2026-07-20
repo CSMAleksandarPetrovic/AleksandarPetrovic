@@ -231,3 +231,32 @@ section.tint{border-top:1px solid var(--line);border-bottom:1px solid var(--line
 
 /* selection color */
 ::selection{background:#CFE1F8;color:var(--navy)}
+
+
+/* ================= photography ================= */
+.about{align-items:start}
+.about-photo{
+  width:100%;border-radius:12px;display:block;
+  box-shadow:0 8px 26px rgba(11,37,69,.14);
+  border:1px solid var(--line);
+}
+.photo-col{display:grid;gap:16px}
+.photo-caption{font-size:13px;color:var(--muted);line-height:1.5;margin:0}
+
+/* hero avatar */
+.hero-inner{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+@media(max-width:760px){
+  .hero-inner{grid-template-columns:1fr;gap:24px}
+  .hero-avatar{order:-1}
+}
+.hero-avatar{
+  width:132px;height:132px;border-radius:50%;object-fit:cover;
+  border:4px solid #fff;box-shadow:0 6px 22px rgba(11,37,69,.16);
+}
+@media(max-width:760px){.hero-avatar{width:96px;height:96px}}
+
+/* contact page portrait */
+.contact-photo{
+  width:92px;height:92px;border-radius:50%;object-fit:cover;
+  border:3px solid rgba(255,255,255,.9);margin-bottom:18px;
+}
