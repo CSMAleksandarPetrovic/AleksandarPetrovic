@@ -263,3 +263,14 @@ section.tint{border-top:1px solid var(--line);border-bottom:1px solid var(--line
 
 .photo-figure{margin:0}
 .photo-figure .photo-caption{margin-top:10px}
+
+
+/* ================= photo size fix ================= */
+/* the portrait must never dominate the layout */
+.photo-col{max-width:320px;justify-self:end;width:100%}
+@media(max-width:820px){.photo-col{justify-self:start;max-width:300px}}
+.about-photo{
+  width:100%;max-width:320px;aspect-ratio:4/5;object-fit:cover;
+  border-radius:12px;
+}
+.photo-caption{max-width:320px}
